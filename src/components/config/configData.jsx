@@ -55,47 +55,48 @@ export const portfolio = [
     image: "mapty.png",
     title: "Mapty",
     subtitle: "Javascript App to keep track of your workouts",
-    github: "",
-    demo: "https://maptynoce86.netlify.app/",
+    github: "https://github.com/Demandred86/mapty",
+    demo: "https://mapty-noce86.netlify.app/",
   },
   {
+    //////////////////////updated////////////////////
+
     id: 2,
     image: "gpt3.png",
     title: "ChatGPT",
     subtitle: "React GPT3 Home Page",
-    github: "",
-    demo: "https://gpt3noce86.netlify.app",
-  },
+    github: "https://github.com/Demandred86/GPT3",
+    demo: "https://gpt3noce86.netlify.app/",
+  }, //////////////////////////////////////////////////
+  //////////////////////updated////////////////////
+
   {
     id: 3,
     image: "forkify.png",
     title: "Forkify",
     subtitle: "Javascript Recipe App ",
-    github: "",
+    github: "https://github.com/Demandred86/Forkify",
     demo: "https://forkifynoce86.netlify.app",
   },
+  //////////////////////////////////////////////////
+  //////////////////////////////////////////////////
+
   {
     id: 4,
     image: "components.png",
     title: "Reusable Components",
     subtitle: "React Reusables. Minimal CSS",
-    github: "",
-    demo: "",
+    github: "https://github.com/Demandred86/components",
+    demo: "https://components-noce86.netlify.app/",
   },
+  //////////////////////////////////////////////////
+  //////////////////////updated////////////////////
   {
     id: 5,
     image: "searchbar.png",
     title: "Autofill Search",
     subtitle: "VanillaJS Contacts Search Bar",
-    github: "",
-    demo: "https://searchbar0.netlify.app",
-  },
-  {
-    id: 6,
-    image: "gallery.png",
-    title: "Fake Gallery Creator",
-    subtitle: "React with Redux ",
-    github: "",
-    demo: "https://searchbar0.netlify.app",
+    github: "https://github.com/Demandred86/Primeur_Project",
+    demo: "https://search-bar-noce86.netlify.app/",
   },
 ];
