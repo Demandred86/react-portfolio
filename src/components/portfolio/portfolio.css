@@ -1,7 +1,7 @@
 .portfolio__container {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
-  gap: 2.5rem;
+  gap: 1.5rem;
 }
 .portfolio__item {
   background: var(--color-bg-variant);
@@ -22,9 +22,14 @@
   max-height: 300px;
   width: 100%;
   height: 100%;
-  object-fit: cover;
+  object-fit: fill;
 }
-
+.portfolio__item-image img {
+  display: block;
+  width: 100%;
+  object-fit: scale-down;
+  min-height: 300px;
+}
 .portfolio__item h3 {
   margin: 1.2rem 0 2rem;
 }

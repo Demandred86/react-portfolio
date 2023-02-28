@@ -21,28 +21,35 @@ const About = () => {
           <div className="about__cards">
             <article className="about__card">
               <FaAward className="about__icon" />
-              <h5>Experience</h5>
-              <small> 1+ Years Working</small>
+              <h5> 1+ Years as FrontEnd Developer</h5>
+              <small>Constant Training</small>
             </article>
-
             <article className="about__card">
+              {" "}
               <FiUsers className="about__icon" />
-              <h5>Clients</h5>
-              <small> 200+ Worldwide</small>
+              <h5>Team Manager</h5>
+              <small> 4 People group</small>
             </article>
-
             <article className="about__card">
               <VscFolderLibrary className="about__icon" />
-              <h5>Projects</h5>
-              <small> 80+ Completed</small>
+              <h5>10 years+ Entrepreneur</h5>
+              <small> As Ecommerce Manager</small>
             </article>
           </div>
 
           <p>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Rerum
-            perferendis tenetur, recusandae, facilis dolor vero facere saepe
-            alias fugit inventore temporibus dolorem excepturi placeat
-            voluptates ex quia est repellendus qui!
+            Junior Level Developer moderately proficient in JavaScript, React
+            and Redux with knowledge of PHP, HTML and Wordpress. Applied
+            programming skills in a ten years experience as Entrepreneur in
+            online retail sales. Built and managed E-commerce websites,
+            implemented personalized extensions, custom plugins, data analysis
+            and automated tasks.
+          </p>
+          <p>
+            Four years living abroad enhanced interpersonal skills in
+            multicultural environments. One Year experience as Team Leader of a
+            four people group in a sales company with responsibilities as
+            trainer and motivator.
           </p>
 
           <a href="#contact" className="btn btn-primary">

@@ -1,11 +1,54 @@
-import React from "react";
+import React, { useState } from "react";
+
 import { MdOutlineEmail } from "react-icons/md";
 import { RiMessengerLine } from "react-icons/ri";
 import { BsWhatsapp } from "react-icons/bs";
 import { CiLinkedin } from "react-icons/ci";
+import emailJs from "emailjs-com";
+
 import "./contact.css";
 
 const Contact = () => {
+  const initialState = {
+    name: "",
+    email: "",
+    message: "",
+  };
+  const [formState, setFormState] = useState(initialState);
+
+  const [statusMessage, setStatusMessage] = useState("");
+  const [isSent, setIsSent] = useState(false);
+
+  const handleChange = (e) => {
+    const { name, value } = e.target;
+    setFormState({ ...formState, [name]: value });
+    console.log(formState);
+  };
+  const clearState = () => setFormState({ ...initialState });
+
+  const handleSubmit = (e) => {
+    e.preventDefault();
+
+    emailJs
+      .sendForm(
+        "service_nyb278v",
+        "template_62vlcfa",
+        e.target,
+        "4__Ge8ZVeDcuokKKC"
+      )
+      .then(
+        (result) => {
+          clearState();
+          setStatusMessage("Email sent successfully");
+          setIsSent(true);
+        },
+        (error) => {
+          console.log(error.text);
+          setStatusMessage(`${error.text} happened`);
+        }
+      );
+  };
+
   return (
     <section id="contact">
       <h5>Get In Touch</h5>
@@ -50,23 +93,38 @@ const Contact = () => {
             </a>
           </article>
         </div>
-        <form action="">
+        <form id="form" onSubmit={handleSubmit}>
           <input
             type="text"
             name="name"
             placeholder="Your Full Name"
             required
+            value={formState.name}
+            onChange={handleChange}
           />
-          <input type="email" name="email" placeholder="Your Email" required />
+          <input
+            type="email"
+            name="email"
+            placeholder="Your Email"
+            required
+            value={formState.email}
+            onChange={handleChange}
+          />
           <textarea
             name="message"
             rows="7"
             placeholder="Your Message"
             required
+            value={formState.message}
+            onChange={handleChange}
           ></textarea>
-          <button type="submit" className="btn btn-primary">
-            Send Message
-          </button>
+          {isSent ? (
+            <p>{statusMessage}</p>
+          ) : (
+            <button type="submit" className="btn btn-primary">
+              Send Message
+            </button>
+          )}
         </form>
       </div>
     </section>
