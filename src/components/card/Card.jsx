@@ -3,7 +3,7 @@ import Skill from "./skill/Skill.jsx";
 
 const card = ({ field, data }) => {
   const skills = data.map(({ id, name, level }) => {
-    return <Skill id={id} name={name} level={level} />;
+    return <Skill key={id} name={name} level={level} />;
   });
 
   return (

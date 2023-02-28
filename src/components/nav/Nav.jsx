@@ -11,7 +11,7 @@ const Nav = () => {
   return (
     <nav>
       <a
-        href="#"
+        href="#home"
         onClick={() => setActiveNav("#")}
         className={activeNav === "#" ? "active" : ""}
       >
@@ -32,9 +32,9 @@ const Nav = () => {
         <BiBook />
       </a>
       <a
-        href="#services"
+        href="#portfolio"
         onClick={() => setActiveNav("#")}
-        className={activeNav === "#services" ? "active" : ""}
+        className={activeNav === "#portfolio" ? "active" : ""}
       >
         <RiServiceLine />
       </a>
