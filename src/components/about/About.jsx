@@ -5,6 +5,8 @@ import { FiUsers } from "react-icons/fi";
 import { VscFolderLibrary } from "react-icons/vsc";
 import "./about.css";
 
+const candidaturaDiv = document.querySelector(".applied-snippet");
+const card = candidaturaDiv.closest(".cardOutline");
 const About = () => {
   return (
     <section id="about">

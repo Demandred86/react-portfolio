@@ -59,16 +59,13 @@ export const portfolio = [
     demo: "https://mapty-noce86.netlify.app/",
   },
   {
-    //////////////////////updated////////////////////
-
     id: 2,
     image: "gpt3.png",
     title: "ChatGPT",
     subtitle: "React GPT3 Home Page",
     github: "https://github.com/Demandred86/GPT3",
     demo: "https://gpt3noce86.netlify.app/",
-  }, //////////////////////////////////////////////////
-  //////////////////////updated////////////////////
+  },
 
   {
     id: 3,
@@ -78,8 +75,6 @@ export const portfolio = [
     github: "https://github.com/Demandred86/Forkify",
     demo: "https://forkifynoce86.netlify.app",
   },
-  //////////////////////////////////////////////////
-  //////////////////////////////////////////////////
 
   {
     id: 4,
@@ -89,8 +84,7 @@ export const portfolio = [
     github: "https://github.com/Demandred86/components",
     demo: "https://components-noce86.netlify.app/",
   },
-  //////////////////////////////////////////////////
-  //////////////////////updated////////////////////
+
   {
     id: 5,
     image: "searchbar.png",
@@ -98,5 +92,13 @@ export const portfolio = [
     subtitle: "VanillaJS Contacts Search Bar",
     github: "https://github.com/Demandred86/Primeur_Project",
     demo: "https://search-bar-noce86.netlify.app/",
+  },
+  {
+    id: 6,
+    image: "omnifood.png",
+    title: "Omnifood",
+    subtitle: "HTML/CSS Landing Page",
+    github: "https://github.com/Demandred86/Omnifood_CSS",
+    demo: "https://omnifood-css-noce86.netlify.app/",
   },
 ];
